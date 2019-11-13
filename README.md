@@ -1,2 +1,2 @@
-# Singal-to-image
-Singal-to-image experimental approch
+# Signal-to-image
+Signal-to-image experimental approch
