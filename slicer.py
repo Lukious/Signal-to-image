@@ -14,9 +14,12 @@ import seaborn as sb
 
 save_number = 0
 
-#filename = input("Input file name:")
-ecg_filename = "208_data"
-peak_filename = "208_peak"
+filename = input("Input ecg file name:")
+ecg_filename = filename
+filename = input("Input peak file name:")
+peak_filename = filename
+#ecg_filename = "208_data"
+#peak_filename = "208_peak"
 ecg_raw_data = pd.read_csv("./"+ecg_filename+".csv")
 ecg_peak_data = pd.read_csv("./"+peak_filename+".csv")
 data = pd.DataFrame(ecg_raw_data,columns=["f_ml","f_v1","ml","v1"])

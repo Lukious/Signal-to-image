@@ -9,8 +9,11 @@ from PIL import Image, ImageDraw
 from numpy import genfromtxt
 import os 
 
+#manualy set path
+# 
 path = "./nF/"
-settedname = "pngF"
+filename = input("Input generate file name:")
+settedname = filename
 file_list = os.listdir(path)
 file_list_csv = [file for file in file_list if file.endswith(".csv")]
 save_number = 0
